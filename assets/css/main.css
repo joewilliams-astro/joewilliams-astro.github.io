@@ -116,7 +116,7 @@ input, select, textarea {
 /* Type */
 
 	body, input, select, textarea {
-		color: #585858;
+		color: #585858; /* Font colour for pretty much everything */
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
 		font-size: 16pt;
 		font-weight: 300;
@@ -145,13 +145,13 @@ input, select, textarea {
 		-ms-transition: border-bottom-color 0.2s ease, color 0.2s ease;
 		transition: border-bottom-color 0.2s ease, color 0.2s ease;
 		text-decoration: none;
-		color: #585858;
+		color: #7fb8d2;
 		border-bottom: dotted 1px rgba(88, 88, 88, 0.5);
 	}
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #f2849e !important;
+			color: #527687 !important;
 		}
 
 	strong, b {
@@ -170,7 +170,7 @@ input, select, textarea {
 		font-size: 2.75em;
 		font-weight: 700;
 		line-height: 1.3;
-		margin: 0 0 1em 0;
+		margin: 0 0 0.2em 0; /* third value determines spacing below header */
 		letter-spacing: -0.035em;
 	}
 
@@ -194,6 +194,73 @@ input, select, textarea {
 			}
 
 		}
+	
+	large_text {
+		font-size: 2em;
+		font-weight: 300;
+		line-height: 1.3;
+		margin: 0 0 1em 0;
+		letter-spacing: -0.035em;
+	}
+
+		@media screen and (max-width: 736px) {
+
+			large_text {
+				font-size: 1.5em;
+				margin: 0 0 1em 0;
+			}
+
+		}
+
+		@media screen and (max-width: 360px) {
+
+			large_text {
+				font-size: 1.25em;
+			}
+
+		}
+	
+	medium_text {
+		font-size: 1.5em;
+		font-weight: 300;
+		line-height: 1.3;
+		margin: 0 0 1em 0;
+		letter-spacing: -0.035em;
+	}
+
+		@media screen and (max-width: 736px) {
+
+			medium_text {
+				font-size: 1.5em;
+				margin: 0 0 1em 0;
+			}
+
+		}
+
+		@media screen and (max-width: 360px) {
+
+			medium_text {
+				font-size: 1.25em;
+			}
+
+		}
+
+	link_head {
+		font-weight: 900;
+		line-height: 1.5;
+		margin: 0 0 2em 0;
+		text-transform: uppercase;
+		letter-spacing: 0.35em;
+		color: #333333
+	}
+
+		link_head a {
+			color: inherit;
+		}
+
+	link_head {
+		font-size: 1.1em;
+	}
 
 	h2, h3, h4, h5, h6 {
 		font-weight: 900;
@@ -229,7 +296,7 @@ input, select, textarea {
 
 	@media screen and (max-width: 980px) {
 
-		h1 br, h2 br, h3 br, h4 br, h5 br, h6 br {
+		h1 br, h2 br, h3 br, h4 br, h5 br, h6 br, link_head br {
 			display: none;
 		}
 
@@ -238,6 +305,10 @@ input, select, textarea {
 	@media screen and (max-width: 736px) {
 
 		h2 {
+			font-size: 1em;
+		}
+
+		link_head {
 			font-size: 1em;
 		}
 
@@ -2269,7 +2340,7 @@ input, select, textarea {
 		input[type="radio"]:checked + label:before {
 			background: #585858;
 			border-color: #585858;
-			color: #ffffff;
+			color: #ffffff; 
 			content: '\f00c';
 		}
 
@@ -2572,7 +2643,7 @@ input, select, textarea {
 		-webkit-flex-wrap: wrap;
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
-		postiion: relative;
+		position: relative;
 		margin: -2.5em 0 0 -2.5em;
 	}
 
@@ -2586,7 +2657,7 @@ input, select, textarea {
 			margin: 2.5em 0 0 2.5em;
 		}
 
-			.tiles article > .image {
+			.tiles article > .image { /* Note that this uses image */
 				-moz-transition: -moz-transform 0.5s ease;
 				-webkit-transition: -webkit-transform 0.5s ease;
 				-ms-transition: -ms-transform 0.5s ease;
@@ -2601,6 +2672,11 @@ input, select, textarea {
 				.tiles article > .image img {
 					display: block;
 					width: 100%;
+					opacity: 0.5;
+					-moz-transition: opacity 0.5s ease-in-out;
+					-webkit-transition: opacity 0.5s ease-in-out;
+					-ms-transition: opacity 0.5s ease-in-out;
+					transition: opacity 0.5s ease-in-out;
 				}
 
 				.tiles article > .image:before {
@@ -2616,9 +2692,8 @@ input, select, textarea {
 					left: 0;
 					width: 100%;
 					height: 100%;
-					opacity: 1.0;
+					opacity: 0;
 					z-index: 1;
-					opacity: 0.8;
 				}
 
 				.tiles article > .image:after {
@@ -2634,7 +2709,8 @@ input, select, textarea {
 					left: 0;
 					width: 100%;
 					height: 100%;
-					background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cstyle%3Eline %7B stroke-width: 0.25px%3B stroke: %23ffffff%3B %7D%3C/style%3E%3Cline x1='0' y1='0' x2='100' y2='100' /%3E%3Cline x1='100' y1='0' x2='0' y2='100' /%3E%3C/svg%3E");
+					/* Below line provides the 'X' that disappears on hovering */
+					/* background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cstyle%3Eline %7B stroke-width: 0.25px%3B stroke: %23ffffff%3B %7D%3C/style%3E%3Cline x1='0' y1='0' x2='100' y2='100' /%3E%3Cline x1='100' y1='0' x2='0' y2='100' /%3E%3C/svg%3E"); */
 					background-position: center;
 					background-repeat: no-repeat;
 					background-size: 100% 100%;
@@ -2671,7 +2747,7 @@ input, select, textarea {
 				padding: 1em;
 				border-radius: 4px;
 				border-bottom: 0;
-				color: #ffffff;
+				color: #585858; /* Colour bonus text on tiles returns to when you stop hovering */
 				text-align: center;
 				text-decoration: none;
 				z-index: 3;
@@ -2682,10 +2758,12 @@ input, select, textarea {
 				}
 
 				.tiles article > a:hover {
-					color: #ffffff !important;
+					color: #585858 !important; /* Text colour of bonus text that appears when you hover over the tiles */
 				}
 
 				.tiles article > a h2 {
+					background-color: #ffffff;
+					border-radius: 10px;
 					margin: 0;
 				}
 
@@ -2699,6 +2777,8 @@ input, select, textarea {
 					line-height: 1.5;
 					margin-top: 0.35em;
 					opacity: 0;
+					/* background-color: #ffffff; */
+					/* border-radius: 10px; */
 				}
 
 					.tiles article > a .content > :last-child {
@@ -2707,6 +2787,7 @@ input, select, textarea {
 
 			.tiles article.style1 > .image:before {
 				background-color: #f2849e;
+				opacity: 0;
 			}
 
 			.tiles article.style2 > .image:before {
@@ -2734,11 +2815,25 @@ input, select, textarea {
 				-webkit-transform: scale(1.1);
 				-ms-transform: scale(1.1);
 				transform: scale(1.1);
+				opacity: 0.3;/* Here is where you include the opacity for when the image is hovered over */
 			}
+
+			/* This could should generate a smooth opacity transition when you replace the lines above with it. */
+			/* body:not(.is-touch) .tiles article:hover > .image {
+				transform: scale(1.1);
+				opacity: 0.3;
+				transition: opacity .5s ease-in-out;
+				-moz-transition: opacity .5s ease-in-out;
+				-webkit-transition: opacity .5s ease-in-out;
+				-moz-transform: scale(1.1) ease-in-out;
+				-webkit-transform: scale(1.1) ease-in-out;
+				-ms-transform: scale(1.1)ease-in-out;
+			} 
+			*/
 
 				body:not(.is-touch) .tiles article:hover > .image:before {
 					background-color: #333333;
-					opacity: 0.35;
+					opacity: 0;
 				}
 
 				body:not(.is-touch) .tiles article:hover > .image:after {
@@ -2829,7 +2924,7 @@ input, select, textarea {
 /* Header */
 
 	#header {
-		padding: 8em 0 0.1em 0 ;
+		padding: 5em 0 0.1em 0 ; /* Padding at the top of the page */
 	}
 
 		#header .logo {
