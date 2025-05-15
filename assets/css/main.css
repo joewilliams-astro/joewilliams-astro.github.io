@@ -139,6 +139,30 @@ input, select, textarea {
 
 		}
 
+	mono {
+		color: inherit; /* Font colour for pretty much everything */
+		font-family: "Courier New";
+		font-size: 16pt;
+		font-weight: 300;
+		line-height: 1.75;
+	}
+
+		@media screen and (max-width: 1680px) {
+
+			mono {
+				font-size: 14pt;
+			}
+
+		}
+
+		@media screen and (max-width: 1280px) {
+
+			mono {
+				font-size: 12pt;
+			}
+
+		}
+
 	a {
 		-moz-transition: border-bottom-color 0.2s ease, color 0.2s ease;
 		-webkit-transition: border-bottom-color 0.2s ease, color 0.2s ease;
@@ -155,7 +179,7 @@ input, select, textarea {
 		}
 
 	strong, b {
-		font-weight: 900;
+		font-weight: 600;
 	}
 
 	em, i {
@@ -200,7 +224,7 @@ input, select, textarea {
 		font-weight: 300;
 		line-height: 1.3;
 		margin: 0 0 1em 0;
-		letter-spacing: -0.035em;
+		letter-spacing: -0.03em;
 	}
 
 		@media screen and (max-width: 736px) {
@@ -225,13 +249,13 @@ input, select, textarea {
 		font-weight: 300;
 		line-height: 1.3;
 		margin: 0 0 1em 0;
-		letter-spacing: -0.035em;
+		letter-spacing: -0.03em;
 	}
 
 		@media screen and (max-width: 736px) {
 
 			medium_text {
-				font-size: 1.5em;
+				font-size: 1.3em;
 				margin: 0 0 1em 0;
 			}
 
@@ -240,7 +264,57 @@ input, select, textarea {
 		@media screen and (max-width: 360px) {
 
 			medium_text {
-				font-size: 1.25em;
+				font-size: 1.1em;
+			}
+
+		}
+	
+	research_authors {
+		font-size: 1.2em;
+		font-weight: 300;
+		line-height: 2;
+		margin: 0 0 1em 0;
+		letter-spacing: -0.03em;
+	}
+
+		@media screen and (max-width: 736px) {
+
+			medium_text {
+				font-size: 1.1em;
+				margin: 0 0 1em 0;
+			}
+
+		}
+
+		@media screen and (max-width: 360px) {
+
+			medium_text {
+				font-size: 1.05em;
+			}
+
+		}
+
+	paper_title {
+		font-size: 1.3em;
+		font-weight: 300;
+		line-height: 1.3;
+		margin: 0 0 1em 0;
+		letter-spacing: -0.03em;
+	}
+
+		@media screen and (max-width: 736px) {
+
+			large_text {
+				font-size: 1.2em;
+				margin: 0 0 1em 0;
+			}
+
+		}
+
+		@media screen and (max-width: 360px) {
+
+			large_text {
+				font-size: 1.15em;
 			}
 
 		}
@@ -2657,11 +2731,11 @@ input, select, textarea {
 			margin: 2.5em 0 0 2.5em;
 		}
 
-			.tiles article > .image { /* Note that this uses image */
+			.tiles article > .image { /* Transitions that occur on the tiles */
 				-moz-transition: -moz-transform 0.5s ease;
 				-webkit-transition: -webkit-transform 0.5s ease;
 				-ms-transition: -ms-transform 0.5s ease;
-				transition: transform 0.5s ease;
+				transition: transform 0.5s ease, opacity 0.5s ease;
 				position: relative;
 				display: block;
 				width: 100%;
@@ -2810,26 +2884,13 @@ input, select, textarea {
 				background-color: #8499e7;
 			}
 
-			body:not(.is-touch) .tiles article:hover > .image {
+			body:not(.is-touch) .tiles article:hover > .image { /* Transitions to perform when hovering over image */
 				-moz-transform: scale(1.1);
 				-webkit-transform: scale(1.1);
 				-ms-transform: scale(1.1);
 				transform: scale(1.1);
-				opacity: 0.3;/* Here is where you include the opacity for when the image is hovered over */
-			}
-
-			/* This could should generate a smooth opacity transition when you replace the lines above with it. */
-			/* body:not(.is-touch) .tiles article:hover > .image {
-				transform: scale(1.1);
 				opacity: 0.3;
-				transition: opacity .5s ease-in-out;
-				-moz-transition: opacity .5s ease-in-out;
-				-webkit-transition: opacity .5s ease-in-out;
-				-moz-transform: scale(1.1) ease-in-out;
-				-webkit-transform: scale(1.1) ease-in-out;
-				-ms-transform: scale(1.1)ease-in-out;
-			} 
-			*/
+			}
 
 				body:not(.is-touch) .tiles article:hover > .image:before {
 					background-color: #333333;

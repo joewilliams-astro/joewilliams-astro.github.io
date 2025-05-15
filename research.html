@@ -41,17 +41,93 @@
 						<ul>
 							<li><a href="index.html">Home</a></li>
 							<li> <a href="research.html"><span class="symbol"><img src="images/Physics.svg" style="width:30px; vertical-align:middle; margin-right:10px" alt="" /></span>My Research</a></span> </li>
-							<li><a href="CV.html">CV</a></li>
-							<li><a href="outreach.html">Science Outreach</a></li>
+							<li><a href="CV.html">CV and Conferences</a></li>
+							<li><a href="graphics.html">Outreach and Science Graphics</a></li>
+							<li><a href="contact.html"><span class="symbol"><img src="images/email.svg" style="width:30px; vertical-align:middle; margin-right:10px" alt="" /></span>Contact</a></li>
 						</ul>
 					</nav>
 
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
-							<h1>My Research</h1>
-							<span class="image main"><img src="images/pic13.jpg" alt="" /></span>
-							<p>I've done lots of research. Promise!</p>
+							<!-- <h1>My Research</h1> -->
+							<!-- <span class="image main"><img src="images/pic13.jpg" alt="" /></span> -->
+							<p>My research focuses on the growth, drift, and sublimation of icy pebbles in protoplanetary discs that surround young stars. 
+								I use 1D radial drift models such as <a href="https://github.com/astrojoanna/pebble-predictor"><mono>pebble predictor</mono></a> and <a href="https://chemcomp.readthedocs.io/en/latest/#"><mono>chemcomp</mono></a>.
+								I've detailed some of the work I've done so far below, including co-author publications and telescope proposals.
+								You can find an<a href="https://ui.adsabs.harvard.edu/search/filter_property_fq_property=AND&filter_property_fq_property=property%3A%22refereed%22&fq=%7B!type%3Daqp%20v%3D%24fq_database%7D&fq=%7B!type%3Daqp%20v%3D%24fq_property%7D&fq_database=(database%3Aastronomy%20OR%20database%3Aphysics)&fq_property=(property%3A%22refereed%22)&p_=0&q=orcid%3A0009-0008-8176-1974&sort=date%20desc%2C%20bibcode%20desc">
+								ADS list of publications I'm involved in here.</a>
+						</p>
+						<section id="first-author">
+							<large_text><b>First Author Papers</b></large_text>
+							<p>
+								<span class="image left"><img src="images/hd163296_corner_GI.png" alt="" /></span>
+								<a href="https://arxiv.org/abs/2501.05316"><paper_title>The CO-Fuelled Time Machine: Tracing Birth Conditions and Terrestrial Planet Formation Outcomes in HD 163296 through Pebble Drift-induced CO Enhancements</paper_title></a><br/>
+								<research_authors>Williams, J. & Krijt, S., 2025, MNRAS, 537 pp.831</research_authors> <br/>
+								Drifting pebbles sublimate their CO ice at the CO snowline (at T=20K), releasing vapour into the observable gas-phase. If you know how much CO gas there is, you can infer how much pebble mass you need to have delivered to the CO snowline - this is what <a href=""https://arxiv.org/abs/2002.08529>Zhang et al. 2020 did</a> did for the Herbig disc HD 163296.<br/>
+								By combining the code <a href="https://github.com/astrojoanna/pebble-predictor"><mono>pebble predictor</mono></a> and MCMC sampler <a href="https://emcee.readthedocs.io/en/stable/"><mono>emcee</mono></a>, <b>we used this pebble mass constraint to constrain the birth mass and radius of the disc when it was first formed</b>; this is what the corner plot to the left shows.<br/>
+								We use our results to estimate the mass flux to the water snowline, where terrestrial planets may be forming, and compare these numbers to planet formation simulations to estimate planet formation outcomes.
+							</p>
+						</section>
+						
+						<section id="co-author">
+							<large_text><b>Co-Author Papers</b></large_text>
+							<p>Here are some papers on which I am a co-author.</p>
+							<div class="table-wrapper">
+										<table>
+											<thead>
+												<tr>
+													<th>Paper Title</th>
+													<th>Author</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td><a href="https://arxiv.org/abs/2501.05881">Smuggling unnoticed: Towards a 2D view of water and dust delivery to the inner regions of protoplanetary discs</a></td>
+													<td>Houge et al. 2025</td>
+												</tr>
+												<tr>
+													<td><a href="https://arxiv.org/abs/2412.05535">The First JWST View of a 30-Myr-old Protoplanetary Disk Reveals a Late-stage Carbon-rich Phase</a></td>
+													<td>Long et al. 2025</td>
+												</tr>
+											</tbody>
+										</table>
+						</section>
+
+						<section id="telescope proposals">
+							<large_text><b>Telescope Proposals</b></large_text>
+							<p>
+								Here are some successful telescope proposals I am involved in.
+							</p>
+								<medium_text>JWST Cycle 4 Proposals</medium_text>
+								<div class="table-wrapper">
+										<table>
+											<thead>
+												<tr>
+													<th>Proposal Title</th>
+													<th>Principal Investigator</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td><a href="https://ui.adsabs.harvard.edu/abs/2025jwst.prop.7135Z/abstract">Population Study of Chemistry in the First Million Years of Planet Formation: A MIRI Survey of Embedded Disks in Ophiuchus</a></td>
+													<td>Ke Zhang</td>
+												</tr>
+												<tr>
+													<td><a href="https://ui.adsabs.harvard.edu/abs/2025jwst.prop.7993H/abstract">Do protoplanetary disk substructures regulate water enrichment and pebble drift across different environments?</a></td>
+													<td>Jane Huang</td>
+												</tr>
+												<tr>
+													<td><a href="https://ui.adsabs.harvard.edu/abs/2025jwst.prop.7280L/abstract">Linking the outer structure with inner chemistry in disks around the most common planet hosts</a></td>
+													<td>Feng Long</td>
+												</tr>
+												<tr>
+													<td><a href="https://ui.adsabs.harvard.edu/abs/2025jwst.prop.7662C/abstract">Can accretion explain the carbon dichotomy in planet-forming disks?</a></td>
+													<td>Maria Jose Colmenares Diaz</td>
+												</tr>
+											</tbody>
+										</table>
+						</section>
 						</div>
 					</div>
 
@@ -91,7 +167,7 @@
 								</ul>
 							</section>
 							<ul class="copyright">
-								<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+								<li>&copy; J. Williams.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 							</ul>
 						</div>
 					</footer>
