@@ -1,157 +1,453 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joe Williams</title>
+    <link rel="stylesheet" href="tooplate-titan-style.css">
 <!--
-	Phantom by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+
+Tooplate 2147 Titan Folio
+
+https://www.tooplate.com/view/2147-titan-folio
+
+Free HTML CSS Template
+
 -->
-<html>
-	<head>
-		<title>Joe Williams</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
-		<!-- Wrapper -->
-			<div id="wrapper">
+</head>
+<body>
+    <nav id="navbar">
+        <div class="nav-container">
+            <ul class="nav-links">
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#cv">CV</a></li>
+                <li><a href="#scicomm">Science Communication</a></li>
+                <li><a href="#graphics">Science Graphics</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="mobile-nav" id="mobileNav">
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#cv">CV</a></li>
+                <li><a href="#graphics">Science Graphics</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-				<!-- Header -->
-					<header id="header">
-						<div class="inner">
+    <section id="about" class="fade-in">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Joe Williams</h2>
+                <p class="section-subtitle">jw1436 [at] exeter [dot] ac [dot] uk</p>
+                <p class="section-subtitle"><i class="fa-brands fa-orcid"></i>orcid:0009-0008-8176-1974</p>
+            </div>
+            <div class="about-content">
+                <div class="about-intro">
+                    <div class="about-image"></div>
+                    <div class="about-text">
+                        <!-- <h3>My Journey</h3> -->
+                        <large_text>I'm Joe, a PhD researcher at the <a href=https://physics-astronomy.exeter.ac.uk/people/profile/index.php?username=jw1436>University of Exeter</a>.</large_text><br/><br/>
+                        <medium_text>I study the earliest stages of the planet formation process around young stars under the supervision of <a href=https://www.skrijt.com>Dr Sebastiaan Krijt</a>.</medium_text><br/><br/>
+						<p>My research focuses on how the the growth and migration ice-covered pebbles in protoplanetary discs can be linked to gas-phase observations with telescopes like
+                            <a href="https://science.nasa.gov/mission/webb/">JWST</a>, <a href="https://www.almaobservatory.org/en/home/">ALMA</a>, and <a href="https://iram-institute.org/science-portal/noema/">NOEMA</a>,
+                            and how we can link these observations to planet formation.</p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-							<!-- Logo -->
-								<!-- <a href="index.html" class="logo">
-									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Phantom</span>
-								</a> -->
+    <!-- RESEARCH -->
+    <section id="research" class="fade-in">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My Research</h2>
+            </div>
+            <div class="about-text">
+            <p>My research focuses on the <b>growth, drift, and sublimation of icy pebbles in protoplanetary discs</b> that surround young stars. 
+            I use 1D radial drift models such as <a href="https://github.com/astrojoanna/pebble-predictor"><mono>pebble predictor</mono></a>, <a href="https://chemcomp.readthedocs.io/en/latest/#"><mono>chemcomp</mono></a>, <a href="https://stammler.github.io/dustpy/"><mono>DustPy</mono></a>.
+            I've detailed some of the work I've done so far below, including co-author publications and telescope proposals.
+            You can find an<a href="https://ui.adsabs.harvard.edu/search/filter_property_fq_property=AND&filter_property_fq_property=property%3A%22refereed%22&fq=%7B!type%3Daqp%20v%3D%24fq_database%7D&fq=%7B!type%3Daqp%20v%3D%24fq_property%7D&fq_database=(database%3Aastronomy%20OR%20database%3Aphysics)&fq_property=(property%3A%22refereed%22)&p_=0&q=orcid%3A0009-0008-8176-1974&sort=date%20desc%2C%20bibcode%20desc">
+            ADS list of publications I'm involved in here.</a>
+            </div>
 
-							<!-- Nav -->
-								<nav>
-									<ul>
-										<li><a href="#menu">Menu</a></li>
-									</ul>
-								</nav>
+            <div class="section-header">
+                <h2 class="section-subtitle">First-author papers</h2>
+            </div>
 
-						</div>
-					</header>
+            <div class="research-cards">
+                <div class="research-card">
+                    <div class="research-image"><img src="images/Trapping Schematic.png" style="width:100%" alt="" /></div>
+                    <h4><a href="https://arxiv.org/pdf/2510.18587"><paper_title>Locked In Ice: how Pebble Drift and Volatile Entrapment can Significantly Impact Carbon and Oxygen Ratios in Evolving Protoplanetary Discs</paper_title></a><br/>
+								<auth>Williams, J. et al., 2025, MNRAS, 544, 3562</auth> <br/></h4>
 
-				<!-- Menu -->
-					<nav id="menu">
-						<h2>Menu</h2>
-						<ul>
-							<li><a href="index.html"><span class="symbol"><img src="images/SVG/house.svg" style="width:30px; vertical-align:middle; margin-right:10px" alt="" /></span>Home</a></span> </li>
-							<li><a href="research.html"><span class="symbol"><img src="images/SVG/Physics.svg" style="width:30px; vertical-align:middle; margin-right:10px" alt="" /></span>My Research</a></span> </li>
-							<li><a href="CV.html"><span class="symbol"><img src="images/SVG/page.svg" style="width:30px; vertical-align:middle; margin-right:10px" alt="" /></span>CV and Conferences</a></span> </li>
-							<li><a href="graphics.html"><span class="symbol"><img src="images/SVG/paintbrush.svg" style="width:30px; vertical-align:middle; margin-right:10px" alt="" /></span>Science Graphics</a></span></li>
-							<li><a href="outreach.html"><span class="symbol"><img src="images/SVG/megaphone.svg" style="width:30px; vertical-align:middle; margin-right:10px" alt="" /></span>Outreach</a></span></li>
-							<li><a href="contact.html"><span class="symbol"><img src="images/SVG/email.svg" style="width:30px; vertical-align:middle; margin-right:10px" alt="" /></span>Contact</a></li>
-						</ul>
-					</nav>
+                    <p>Models of icy pebble drift typically simulates all available CO ice as sublimating at 20K, although observational evidence from JWST suggests that ices are <b>mixed</b> - that is, some CO is locked <i>inside</i> water and CO<sub>2</sub> ice.<br/>
+                    We expand on work by <a href="https://arxiv.org/abs/2406.16029">Ligterink et al. 2024</a> to model CO trapped inside water ice in a dynamically evolving disc. We find that the carbon and oxygen ratios can be greatly modified, with up to a factor of 10 increase in the carbon content inside 1 au, providing a path to both carbon- and water-rich discs.
+                    CO entrapment provides a different chemical environment for planets to form in, representing the necessity to consider entrapment in volatile evolution studies. Trapping other volatiles like CH<sub>4</sub> and N<sub>2</sub> may make further dramatic changes.
+					</p>		
+                </div>
+                
+                <div class="research-card">
+                    <div class="research-image"><img src="images/hd163296_corner_GI.png" style="width:80%" alt="" /></div>
+                    <h4><a href="https://arxiv.org/abs/2501.05316"><paper_title>The CO-Fuelled Time Machine: Tracing Birth Conditions and Terrestrial Planet Formation Outcomes in HD 163296 through Pebble Drift-induced CO Enhancements</paper_title></a><br/>
+								<auth>Williams, J. & Krijt, S., 2025, MNRAS, 537, 831</auth> <br/></h4>
+                    
+                    <p>Drifting pebbles sublimate their CO ice at the CO snowline (at T=20K), releasing vapour into the observable gas-phase. If you know how much CO gas there is, you can infer how much pebble mass you need to have delivered to the CO snowline - this is what <a href=""https://arxiv.org/abs/2002.08529>Zhang et al. 2020 did</a> did for the Herbig disc HD 163296.<br/>
+                    By combining the code <a href="https://github.com/astrojoanna/pebble-predictor"><mono>pebble predictor</mono></a> and MCMC sampler <a href="https://emcee.readthedocs.io/en/stable/"><mono>emcee</mono></a>, <b>we used this pebble mass constraint to constrain the birth mass and radius of the disc when it was first formed</b>; this is what the corner plot to the right shows.<br/>
+                    We use our results to estimate the mass flux to the water snowline, where terrestrial planets may be forming, and compare these numbers to planet formation simulations to estimate planet formation outcomes.</br>
+                    We also constrain <b>grains to be fragile</b>, constrained by existing dust mass observations.</p>
+							
+                </div>
+            </div>
+            <br><br>
+            <div class="section-header">
+                <h2 class="section-subtitle">Second and co-author papers</h2>
+            </div>
 
-				<!-- Main -->
-					<div id="main">
-						<div class="inner">
-							<header>
-								<h1>Joe Williams</h1>
-								<h2>PhD Researcher in Astrophysics</h2>
-								<p><span class="image left"><img src="images/picture_of_me.jpg" style="width:30vw; min-width:100px; max-width: 450px" alt="" /></span>
-									<large_text>I'm Joe, a PhD researcher at the <a href=https://physics-astronomy.exeter.ac.uk/people/profile/index.php?username=jw1436>University of Exeter</a>.</large_text><br/><br/>
-									<medium_text>I study the earliest stages of the planet formation process around young stars under the supervision of <a href=https://www.skrijt.com>Dr Sebastiaan Krijt</a>.</medium_text><br/>
-								</p>
-								<p>My research focuses on how the the growth and migration ice-covered pebbles in protoplanetary discs can be linked to gas-phase observations with telescopes like
-									<a href="https://science.nasa.gov/mission/webb/">JWST</a>, <a href="https://www.almaobservatory.org/en/home/">ALMA</a>, and <a href="https://iram-institute.org/science-portal/noema/">NOEMA</a>,
-									and how we can link these observations to planet formation.</p>
-								<p>I'm a big fan of doing outreach to schools and astronomical societies across the UK, and I write for the blog <a href="https://astrobites.org/author/jwilliams/">Astrobites</a> where we summarise academic papers daily.</p>
-								<p>You can find out more about me by clicking on the tiles below.</p>
-							</header>
-							<section class="tiles">
-								<article class="style1">
-									<span class="image">
-										<img src="images/Physics.png" alt="" />
-									</span>
-									<a href="research.html">
-										<h1>My Research</h1>
-										<div class="content">
-											<p><b>Find out what kind of research I'm involved in.</b></p>
-										</div>
-									</a>
-								</article>
-								<article class="style1">
-									<span class="image">
-										<img src="images/CV.png" alt="" /> 
-									</span>
-									<a href="CV.html">
-										<h1>CV and Conferences</h1>
-										<div class="content">
-											<p><b>Find out more about my experience with teaching, presenting, and conferences.</b></p>
-										</div>
-									</a>
-								</article>
-								<article class="style1">
-									<span class="image">
-										<img src="images/Envelope.png" alt="" />
-									</span>
-									<a href="contact.html">
-										<h1>Contact me!</h1>
-										<div class="content">
-											<p><b>Find my contact details here.</b></p>
-										</div>
-									</a>
-								</article>
-								
-								<article class="style1">
-									<span class="image">
-										<img src="images/paintbrush.png" alt="" />
-									</span>
-									<a href="graphics.html">
-										<h1>Science Graphics</h1>
-										<div class="content">
-											<p><b>Find out more about my science graphics and schematics.</b></p>
-										</div>
-									</a>
-								</article>
+            <div class="portfolio-grid">
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="images/armitage2026.jpg">
+                    </div>
+                    <div class="portfolio-content">
+                        <h4 class="portfolio-title"><a href="https://ui.adsabs.harvard.edu/abs/2025ApJ...990L..72K/abstract">Tracing Pebble Drift History in Two Protoplanetary Disks with CO Enhancement</a></h4>
+                        <p class="portfolio-description"><b>Armitage, Williams et al. 2026</b><br>Centrally-peaked enhancements of <sup>13</sup>C<sup>18</sup>O from high-resolution ALMA data traces pebble drift history, and points towards <b>CO entrapment within water ice</b>.</p>
+                    </div>
+                </div>
+                
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="images/mallaney2026.jpg">
+                    </div>
+                    <div class="portfolio-content">
+                        <h4 class="portfolio-title"><a href="https://ui.adsabs.harvard.edu/abs/2026ApJ...998..255M/abstract">Protoplanetary Disk Cavities with JWST-MIRI: A Dichotomy in Molecular Emission</a></h4>
+                        <p class="portfolio-description"><b>Mallaney et al. 2026</b><br>Studying 12 discs with millimetre cavities reveal "molecule-rich" and "molecule-poor" discs, with this dichotomy potentially linked to the micron-sized dust in these cavities. These discs may switch from molecule-rich to poor, or skip the rich phase.</p>
+                    </div>
+                </div>
+                
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="images/krijt2025.jpg">
+                    </div>
+                    <div class="portfolio-content">
+                        <h4 class="portfolio-title"><a href="https://ui.adsabs.harvard.edu/abs/2025ApJ...990L..72K/abstract">Cosmic Cascades: How Disk Substructure Regulates the Flow of Water to Inner Planetary Systems</a></h4>
+                        <p class="portfolio-description"><b>Krijt et al. 2025</b><br>Correlations between cold water emission and the innermost dust gap as observed by ALMA can be explained with population synthesis models of dynamical dust trapping. Rapid drift, leaky gaps, or late gaps fail to reproduce the trend.</p>
+                    </div>
+                </div>             
+            </div>
+            <h3>Additional papers</h3><br>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Author</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a href="https://ui.adsabs.harvard.edu/abs/2025MNRAS.537..691H/abstract">Smuggling unnoticed: Towards a 2D view of water and dust delivery to the inner regions of protoplanetary discs</a></td>
+                            <td>Houge et al. 2025</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://ui.adsabs.harvard.edu/abs/2025ApJ...978L..30L/abstract">The First JWST View of a 30-Myr-old Protoplanetary Disk Reveals a Late-stage Carbon-rich Phase</a></td>
+                            <td>Long et al. 2025</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
 
-								<article class="style1">
-									<span class="image">
-										<img src="images/megaphone.png" alt="" />
-									</span>
-									<a href="outreach.html">
-										<h1>Science Communication and Outreach</h1>
-										<div class="content">
-											<p><b>Find out more about my experience in science communication and public outreach.</b></p>
-										</div>
-									</a>
-								</article>
-								
-							</section>
-						</div>
-					</div>
+        </div>
+    </section>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<div class="inner">
-							<section>
-								<large_text>Feel free to reach out!</large_text><br/>
-								Email: <mono>jw1436 (at) exter (dot) ac (dot) uk</mono>
-								<ul class="icons">
-									<li><a href="https://github.com/joewilliams-astro" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
-									<li><a href="mailto:jw1436@exeter.ac.uk" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
-								</ul>
-							</section>
-							<ul class="copyright">
-								<li>&copy; J. Williams.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-							</ul>
-						</div>
-					</footer>
+    <section id="cv" class="fade-in">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">CV</h2>
+            </div>
+            <div class="about-text">
+                <p>Below is a selection of the talks and posters I have delivered, including seminars and contributed talks to conferences and workshops.</p>
+            </div>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Conference</th>
+                            <th>Location</th>
+                            <th>Year</th>
+                            <th>Contribution</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>SPiCE-2 Workshop</td>
+                            <td>Lyon, France</td>
+                            <td>2026</td>
+                            <td>Invited talk</td>
+                        </tr>
+                        <tr>
+                            <td>UK Exoplanet Meeting 2026</td>
+                            <td>Bristol, UK</td>
+                            <td>2026</td>
+                            <td>Contributed talk</td>
+                        </tr>
+                        <tr>
+                            <td>From Galaxies to Planets: an Elemental Jourey</td>
+                            <td>Ringberg Castle, Germany</td>
+                            <td>2026</td>
+                            <td>Contributed talk</td>
+                        </tr>
+                        <tr>
+                            <td>-</td>
+                            <td>Ludwig-Maximilians-Universität München, Germany</td>
+                            <td>2025</td>
+                            <td>Seminar</td>
+                        </tr>
+                         <tr>
+                            <td>UK & Ireland Discs Meeting 2025</td>
+                            <td>University of Hertfordshire, UK</td>
+                            <td>2025</td>
+                            <td>Contributed talk</td>
+                        </tr>
+                         <tr>
+                            <td>Origin of Solar Systems</td>
+                            <td>South Hadley, MA, USA</td>
+                            <td>2025</td>
+                            <td>Poster</td>
+                        </tr>
+                         <tr>
+                            <td>-</td>
+                            <td>Institute of Theoretical Astrophysics, University of Heidelberg, Germany</td>
+                            <td>2025</td>
+                            <td>Short talk</td>
+                        </tr>
+                         <tr>
+                            <td><mono>chemcomp</mono> workshop</td>
+                            <td>GLOBE Institute, University of Copenhagen, Denmark</td>
+                            <td>2025</td>
+                            <td>Workshop seminar</td>
+                        </tr>
+                         <tr>
+                            <td>UK Exoplanet Meeting 2025</td>
+                            <td>University of Leeds, UK</td>
+                            <td>2025</td>
+                            <td>Poster</td>
+                        </tr>
+                         <tr>
+                            <td>-</td>
+                            <td>Ludwig-Maximilians-Universität München, Germany</td>
+                            <td>2024</td>
+                            <td>Seminar</td>
+                        </tr>
+                         <tr>
+                            <td>UK & Ireland Discs Meeting 2024</td>
+                            <td>University of Warwick, UK</td>
+                            <td>2024</td>
+                            <td>Contributed talk</td>
+                        </tr>
+                         <tr>
+                            <td>The Birth of Solar Systems</td>
+                            <td>Toruń, Poland</td>
+                            <td>2024</td>
+                            <td>Contributed talk</td>
+                        </tr>
+                         <tr>
+                            <td>New Heights in Planet Formation</td>
+                            <td>Garching ESO, Germany</td>
+                            <td>2024</td>
+                            <td>Poster</td>
+                        </tr>
+                         <tr>
+                            <td>UK Exoplanet Meeting 2023</td>
+                            <td>University of Birmingham, UK</td>
+                            <td>2024</td>
+                            <td>Keynote talk</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>            
+        </div>
+    </section>
 
-			</div>
+    <section id="scicomm" class="fade-in">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Science Communication</h2>
+            </div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+            <div class="about-text">
+                <p>I write regularly for the blog <a href="https://astrobites.org">astrobites</a>. Here you can find some of my recent articles, and a <a href="https://astrobites.org/author/jwilliams/">full list on my Astrobites author page</a>. I typically write about planet formation and protoplanetary discs, to share with undergraduates the science the community is doing.</p>
+                <br>
+                <p>I also deliver outreach talks and interactive sessions to nearby schools and astronomy societies. To date, I have delivered 6 public talks, run two interactive workshops, and appeared on social media for UKRI on three occasions. (I have <a href="https://www.instagram.com/reel/C7MSyVYt6aR/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==">discussed the Three Body Problem show</a>, <a href="https://www.instagram.com/reel/DA0jHtqtTRh/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==">explained planet formation</a>, <a href="https://www.instagram.com/reel/C_Sjn-6tKf3/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==">contributed to "fun fact Friday"</a>, and <a href="https://www.instagram.com/reel/DEXHLSTPX2Q/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==">discussed star signs</a>)</p>
+                <br>
+                <p>Below are some highlights of my Astrobites articles.</p>
+            </div>
 
-	</body>
+            <div class="portfolio-grid">
+                
+                <div class="portfolio-card">
+                    <div class="portfolio-image asteroids"></div>
+                    <div class="portfolio-content">
+                        <h3 class="portfolio-title"><a href="https://astrobites.org/2026/05/14/asteroid-sample-missions/">Piecing Together Humanity’s Astrophysical Ancestry</a></h3>
+                        <p class="portfolio-description">What have we learned from the space probes that visited asteroids Itokawa, Ryugu, and Bennu? Quite a lot about the early, forming Solar System – which might include some prehistoric biology...<br><i>Image credit: JAXA, University of Tokyo</i></p>
+                    </div>
+                </div>
+
+                <div class="portfolio-card">
+                    <div class="portfolio-image dustpy"></div>
+                    <div class="portfolio-content">
+                        <h3 class="portfolio-title"><a href="https://astrobites.org/2026/04/09/simulating-protoplanetary-discs/">Code in Astro: how to simulate a Protoplanetary Disc with DustPy</a></h3>
+                        <p class="portfolio-description">How do astrophysicists research and model planet formation in protoplanetary discs? Learn how to simulate a protoplanetary disc using DustPy: software commonly used in state-of-the-art research.<br><i>Image credit: Andrews et al. 2018</i></p>
+                    </div>
+                </div>
+                
+                <div class="portfolio-card">
+                    <div class="portfolio-image ARKS"></div>
+                    <div class="portfolio-content">
+                        <h3 class="portfolio-title"><a href="https://astrobites.org/2026/02/12/arks-survey/">All Aboard the ARK(S Survey)!</a></h3>
+                        <p class="portfolio-description">The first set of high-resolution ALMA observations of exoKuiper belts has been released, and they reveal an unprecedented wealth of structure.<br><i>Image credit: Marino et al. 2018</i></p>
+                    </div>
+                </div>
+            </div>
+
+            <h3>Additional articles</h3><br>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a href="https://astrobites.org/2026/01/01/jedice-disc/">Use the Polycyclic Aromatic Hydrocarbons, Luke! The JEDIce view of a protoplanetary disc<a/></td>
+                            <td>Results from the JEDIce program, using PAH emission as a backlight to study disc morphology.</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://astrobites.org/2025/12/15/heavy-water-with-heavy-implications/">Heavy Water with Heavy Implications</a></td>
+                            <td>Identifying whether water ice is inherited from molecular clouds or reprocessed.</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://astrobites.org/2025/10/18/fomalhaut-debris-disk/">Michelangelo in Space – A Planet Carving the Fomalhaut Debris Disk?</a></td>
+                            <td>Explaining the eccentricity gradient of the Fomalhaut debris disk using planets.</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://astrobites.org/2025/09/18/forming-misaligned-discs/">Get back in line! A disc that won’t stay aligned with its planet</a></td>
+                            <td>A possible formation pathway for a disc misaligned with an orbiting exoplanet.</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://astrobites.org/2025/07/21/leaky-dust-trap/">We’ve been trying to reach you about your leaky dust trap’s extended warranty</a></td>
+                            <td>Potential evidence of a leaky dust trap around PDS 70, inferred with ALMA Band-9 observations.</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://astrobites.org/2025/05/22/water-ice-detection-in-exo-kuiper-belt/">Cosmic Copycat - The First Detection of Water Ice in an Exo-Kuiper Belt</a></td>
+                            <td>First detection of water ice in an exo-Kuiper Belt with JWST.</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://astrobites.org/2025/03/14/context-of-physics-exceptional-women/">More Than a Name - Why Women in Physics Deserve Context</a></td>
+                            <td>Interview with <a href="https://cldaviesastro.github.io">Dr Claire Davies</a> about the presentation of women in STEM.</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://astrobites.org/2025/02/28/water-water-everywhere/">Water, Water, Everywhere - And Not a Drop to Photodissociate!</a></td>
+                            <td>Detection of water vapour in PDS 70 with JWST.</td>
+                        </tr>								
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section id="graphics" class="fade-in">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Science Graphics</h2>
+            </div>
+
+            <div class="about-text">
+                <p>I like to create illustrations of science to help communicate complex physics, particularly that of the research I do. I use these images in science and outreach talks. Below, you can find some examples of my work, which I have created using Inkscape.</p>
+                <br>
+                <p>Click on an image to enlarge it, and click again to shrink it.</p>
+            </div>
+
+            <div class="graphics-grid">
+                <div class="graphics-card" onclick="this.classList.toggle('active')">
+                    <img src="images/Trapping Schematic.png">
+                    <p class="information">This is some information.</p>
+                </div>
+                <div class="graphics-card" onclick="this.classList.toggle('active')">
+                    <img src="images/flying_saucer_observation.png">
+                </div>
+                <div class="graphics-card" onclick="this.classList.toggle('active')">
+                    <img src="images/astrobites_water_ice.png">
+                </div>
+                <div class="graphics-card" onclick="this.classList.toggle('active')">
+                    <img src="images/fomalhaut_rings.png">
+                </div>
+                <div class="graphics-card" onclick="this.classList.toggle('active')">
+                    <img src="images/hd163296.png">
+                </div>
+                <div class="graphics-card" onclick="this.classList.toggle('active')">
+                    <img src="images/astrobites_pds70.png">
+                </div>
+            </div>            
+        </div>
+    </section>
+
+    <section id="contact" class="fade-in">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contact</h2>
+                <p class="section-subtitle">Feel free to reach out! I'm happy to discuss anything from science to outreach, including potential collaborations.</p></br>
+                <p class="section-subtitle"><b>Email</b></br>jw1436 [at] exeter.ac.uk</p></br>
+                <p class="section-subtitle"><b>Address</b></br>
+                    Department of Physics & Astronomy</br>
+                    Physics Building</br>
+                    University of Exeter</br>
+                    Stocker Road</br>
+                    Exeter</br>
+                    EX4 4QL</br>
+                    United Kingdom</p>
+            </div>
+            
+            <div class="container">
+                <div class="graphics-grid">
+                    <div class="graphics-card">
+                        <div class="graphics-image trapping"></div>
+                    </div>
+                    <div class="graphics-card">
+                        <div class="graphics-image trapping"></div>
+                    </div>
+                </div>
+            </div>
+            
+            </div> 
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-bottom">
+            <p class="footer-copyright">
+                © J. Williams 2026
+            </p>
+            <div class="footer-credits">
+                <a href="https://www.tooplate.com" target="_blank" rel="noopener noreferrer" class="footer-credit-link tooplate">
+                    <span class="footer-credit-icon">🎨</span>
+                    <span>Design by Tooplate</span>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="tooplate-titan-script.js"></script>
+</body>
 </html>
